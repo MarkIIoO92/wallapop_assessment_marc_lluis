@@ -1,0 +1,9 @@
+// Import variables and mixins
+@import 'base/variables';
+@import 'base/mixins';
+
+// Import component styles
+@import 'components/item-list';
+@import 'components/item';
+@import 'components/favorite-modal';
+@import 'components/item-manager';

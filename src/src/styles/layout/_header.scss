@@ -1,0 +1,31 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 1rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  &__logo {
+    flex: 1;
+    &-image {
+      width: 200px;
+      height: auto;
+    }
+  }
+
+  &__title {
+    flex: 2;
+    text-align: center;
+  }
+
+  &__search {
+    flex: 1;
+    text-align: right;
+  }
+}
