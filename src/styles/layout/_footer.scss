@@ -1,0 +1,17 @@
+@import '../base/variables';
+
+.footer {
+  background-color: $green-wp;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+  position: fixed; // Add this line
+  left: 0; // Add this line
+  bottom: 0; // Add this line
+  width: 100%; // Add this line
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}

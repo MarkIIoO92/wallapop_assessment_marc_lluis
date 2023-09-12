@@ -1,6 +1,6 @@
 import React from 'react';
 import ItemList from './ItemList';
-import './ItemManager.scss';
+import '../styles/components/_item-manager.scss';
 
 function ItemManager() {
   return (
@@ -11,9 +11,6 @@ function ItemManager() {
       <main>
         <ItemList />
       </main>
-      <footer>
-        <p>&copy; 2021 Item Manager</p>
-      </footer>
     </div>
   );
 }
