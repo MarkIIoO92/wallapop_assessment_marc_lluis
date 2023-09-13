@@ -1,48 +1,46 @@
-@import '../base/variables';
-@import '../base/mixings';
 
 .item {
-  @include item-styles;
+  flex-basis: calc(20% - 1rem);
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid $border-color;
+  border-radius: 5px;
+  padding: 1rem;
+  transition: transform 0.3s; 
+  margin-bottom: 1rem;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-between; 
+  max-width: 100%; 
+  height: auto;
+  cursor: pointer;
+  position: relative;
+  @include hover-scale(1.1, $green-wp);
 
   img {
     max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 4/3;
+    display: block;
+    margin-bottom: 1rem;
   }
 
-  .item-content {
-    margin-left: 1rem;
-    flex: 1;
+  .ant-card-body {
+    div {
+      margin: 0;
+      font-size: 10px;
+      text-align: justify;
 
-    .item-title {
-      font-weight: $font-weight-bold;
-      margin-bottom: 0.5rem;
-    }
-
-    .item-description {
-      margin-bottom: 0.5rem;
-    }
-
-    .item-price {
-      font-weight: $font-weight-bold;
-      margin-bottom: 0.5rem;
-    }
-
-    .item-email {
-      margin-bottom: 0.5rem;
-      opacity: 0.5;
+      a {
+        color: $green-wp;
+        text-decoration: underline;
+      }
     }
   }
 
-  .add-favorite {
-    background-color: $green-wp;
-    color: #fff;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
-
-    &:hover {
-      background-color: darken($green-wp, 10%);
-    }
+  &:hover {
+    z-index: 2;
   }
 }

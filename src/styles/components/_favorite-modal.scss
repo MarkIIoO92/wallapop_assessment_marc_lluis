@@ -1,0 +1,71 @@
+.favorite-menu-toggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: #000; // Adjust the color of the hamburger icon
+  font-size: 1.5rem; // Adjust the size of the hamburger icon
+  z-index: 1000; // Ensure the button is on top of other elements
+
+  &:hover {
+    @include hover-color(#000);
+  }
+}
+
+.favorite-items-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: -2px 0 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  overflow-y: auto;
+  z-index: 999;
+  transform: translateX(100%); // Set the initial position of the menu outside the viewport
+}
+
+.favorite-items-menu-animate {
+  animation: slide-in 0.5s forwards; // Add a slide-in animation
+}
+
+.favorite-items-menu-closing {
+  animation: slide-out 0.5s forwards; // Add a slide-out animation
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-out {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.delete-icon{
+  color: $green-wp;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.favorite-modal-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: $green-wp;
+  margin-bottom: 16px;
+}

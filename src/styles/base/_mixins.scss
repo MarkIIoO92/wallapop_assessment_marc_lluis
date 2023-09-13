@@ -1,0 +1,19 @@
+@mixin font-properties($font-size, $font-weight, $line-height) {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+}
+
+@mixin hover-color($color) {
+  &:hover {
+    color: darken($color, 5%);
+  }
+}
+
+@mixin hover-scale($scale, $border-color) {
+  &:hover {
+    transform: scale($scale);
+    border-color: $border-color;
+  }
+}

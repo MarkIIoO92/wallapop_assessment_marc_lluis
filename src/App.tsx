@@ -1,5 +1,5 @@
 import React from 'react';
-import ItemManager from './components/ItemManager';
+import ItemManager from './components/Item/ItemManager';
 import Header from './components/Layout/Header/Header';
 import Footer from './components/Layout/Footer/Footer';
 import ScrollTopButton from './components/Layout/ScrollTopButton';
@@ -7,7 +7,7 @@ import '@fortawesome/fontawesome-free/css/fontawesome.css';
 import '@fortawesome/fontawesome-free/css/solid.css';
 import '@fortawesome/fontawesome-free/css/regular.css';
 import '@fortawesome/fontawesome-free/css/brands.css';
-
+import './styles/main.scss';
 
 
 function App() {

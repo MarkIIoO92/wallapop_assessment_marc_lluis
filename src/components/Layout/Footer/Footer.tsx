@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../../styles/layout/_footer.scss';
-import { FooterProps } from '../../../types/Footer';
+import { FooterProps } from '../../../types/FooterProps';
 
 const Footer: React.FC<FooterProps> = ({ companyName, year }) => {
   return (

@@ -3,7 +3,8 @@
 @import 'base/mixins';
 
 // Import component styles
+@import 'components/favorite-modal';
+@import 'components/item-card';
 @import 'components/item-list';
 @import 'components/item';
-@import 'components/favorite-modal';
-@import 'components/item-manager';
+@import 'components/load-more-items';

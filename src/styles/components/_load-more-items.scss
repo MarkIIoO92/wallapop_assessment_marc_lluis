@@ -1,0 +1,13 @@
+.load-more-btn {
+  display: inline-block;
+  background: none;
+  color: $green-wp;
+  border: none;
+  padding: 0;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: color 0.3s;
+  margin-top: 1rem;
+  @include font-properties(1.125rem, $font-weight-bold, 1.9375rem);
+  @include hover-color($green-wp);
+}
